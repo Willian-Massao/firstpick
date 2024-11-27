@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="login" class="container">
+    <h1>Enter Your Name</h1>
+    <input type="text" id="name" placeholder="Your name">
+    <button id="joinBtn">Join</button>
+  </div>
+
+  <div id="lobby" class="container" style="display: none;">
+    <h1>Lobby</h1>
+    <div id="playersList">
+        
+    </div>
+    <button id="startGameBtn" style="display: none;">Start Game</button>
+  </div>
+
+  <div id="game" class="container" style="display: none;">
+    <h1 id="role"></h1>
+    <div id="scores">
+      <h2>Points</h2>
+      <p>Team A: <span id="pointsA">0</span></p>
+      <p>Team B: <span id="pointsB">0</span></p>
+    </div>
+    <div id="questionSection">
+        <h2 id="question"></h2>
+        <button id="buzzBtn" style="display: none;">Buzz!</button>
+    </div>      
+    <div id="ownerControls" style="display: none;">
+        <p id="answer"></p>
+        <p id="buzzedPlayer">Esperando algum player apertar o botão</p>
+        <button id="correctBtn">Correct</button>
+        <button id="wrongBtn">Wrong</button>
+
+        <div id="viewport">
+            <div id="quest_container">
+                <div id="question_container">
+                    <h2 id="question_view">uma questão maneira ?</h2>
+                </div>
+                <div id="resposta_container">
+                    <div class="resposta">
+                        <div class="resp_index">
+                            <h1>A</h1>
+                        </div>
+                        <h2 class="resp_text" >Qualquercoisa</h2>
+                    </div>
+                    <div class="resposta">
+                        <div class="resp_index">
+                            <h1>B</h1>
+                        </div>
+                        <h2 class="resp_text" >Qualquercoisa</h2>
+                    </div>
+                    <div class="resposta">
+                        <div class="resp_index">
+                            <h1>C</h1>
+                        </div>
+                        <h2 class="resp_text" >Qualquercoisa</h2>
+                    </div>
+                    <div class="resposta">
+                        <div class="resp_index">
+                            <h1>D</h1>
+                        </div>
+                        <h2 class="resp_text" >Qualquercoisa</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
