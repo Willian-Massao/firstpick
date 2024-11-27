@@ -66,16 +66,12 @@ firstpick-quiz/
    npm install
    ```
 
-3. Configure o banco de dados:  
-   - Crie um banco com o esquema fornecido no arquivo `quiz.sql`.  
-   - Atualize as credenciais no arquivo `config/db.js`.
-
-4. Inicie o servidor:
+3. Inicie o servidor:
    ```bash
    npm start
    ```
 
-5. Acesse no navegador:
+4. Acesse no navegador:
    ```bash
    http://localhost:3000
    ```
